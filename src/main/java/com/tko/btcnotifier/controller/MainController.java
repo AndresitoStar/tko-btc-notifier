@@ -11,11 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/btcNotifier")
 public class MainController {
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World, this is BTC Status Notifier - Made by Tko!";
-    }
 
     @GetMapping
     public ResponseEntity<String> helloWorld() {
